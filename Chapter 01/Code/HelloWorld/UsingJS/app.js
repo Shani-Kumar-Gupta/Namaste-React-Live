@@ -4,8 +4,12 @@ const heading = document.createElement('h1');
 // return content used inside h1 tag in the dom
 heading.innerHTML = 'Hello World! 😍 I love React';
 
+const p = document.createElement('p');
+p.innerHTML = `Let's start with React Yeah! 😊`;
+
 // accessing the root element using document web API: getElementById
 const root = document.getElementById('root');
 
 // append the heading element to the root element
 root.appendChild(heading);
+root.appendChild(p);
