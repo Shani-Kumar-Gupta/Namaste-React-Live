@@ -33,4 +33,4 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(container);
 
 // Production Ready::
-// Optimize, budle it, minify, clean console, caching 
+// Optimize, budle it, minify, clean console, caching

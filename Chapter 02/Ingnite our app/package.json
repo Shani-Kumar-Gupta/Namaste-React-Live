@@ -1,0 +1,14 @@
+{
+  "name": "ingnite-our-app",
+  "version": "1.0.0",
+  "description": "React App",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Shani Kumar Gupta",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.8.2"
+  }
+}
