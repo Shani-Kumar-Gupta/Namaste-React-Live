@@ -5,7 +5,15 @@ const heading = document.createElement('h1');
 heading.innerHTML = 'Hello World! 😍 I love React';
 
 const p = document.createElement('p');
-p.innerHTML = `Let's start with React Yeah! 😊`;
+p.innerHTML = `<b><i>Let's start with React Yeah! 😊</i></b>`;
+
+const div = document.createElement('div');
+div.setAttribute('id', 'container');
+
+const heading2 = document.createElement('h2');
+heading2.innerText = '<i>Hello World!</i>';
+
+div.appendChild(heading2);
 
 // accessing the root element using document web API: getElementById
 const root = document.getElementById('root');
@@ -13,3 +21,4 @@ const root = document.getElementById('root');
 // append the heading element to the root element
 root.appendChild(heading);
 root.appendChild(p);
+root.appendChild(div);
