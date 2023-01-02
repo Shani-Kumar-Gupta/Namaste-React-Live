@@ -1,3 +1,20 @@
+/***
+ *
+ *
+ *
+ * Automatic Reload when something got changed - HMR: Hot Module Reloading (Parcel is doing for us)
+ * How Parcel knows that something got changed - File Watcher Algorithms (Parcel is doing for us) - Written in C++
+ * Parcle is doing so many things for us - That's required some space - Which handles using .parcel-cache
+ * dist - minified version (development build for us and hosted on server) - npx parcel entrypoint
+ * Minified production build - npx parcel build entrypoint
+ *
+ *
+ *
+ */
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
 // create element using React createElement
 const heading = React.createElement('h1', {}, 'Hello World! 😍 I Love React');
 

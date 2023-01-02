@@ -1,14 +1,18 @@
 {
   "name": "ingnite-our-app",
   "version": "1.0.0",
-  "description": "React App",
-  "main": "App.js",
+  "description": "",
   "scripts": {
     "test": "jest"
   },
   "author": "Shani Kumar Gupta",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "^2.8.2"
+    "parcel": "^2.8.2",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
