@@ -1,13 +1,30 @@
 /***
  *
  *
- *
- * Automatic Reload when something got changed - HMR: Hot Module Reloading (Parcel is doing for us)
+ * Created a server for you
+ * Automatic Reload when something got changed - HMR: Hot Module Replacement (Parcel is doing for us)
  * How Parcel knows that something got changed - File Watcher Algorithms (Parcel is doing for us) - Written in C++
  * Parcle is doing so many things for us - That's required some space - Which handles using .parcel-cache
  * dist - minified version (development build for us and hosted on server) - npx parcel entrypoint
  * Minified production build - npx parcel build entrypoint
- *
+ * BUNDLING
+ * Cleaning up our code
+ * Dev and Production build
+ * Super fast build algorithm
+ * Image optimization
+ * JS optimization
+ * Caching while development
+ * Compression
+ * Compatible with older versions of browsers
+ * enable HTTPS on dev
+ * Manages PORT numbers for multiple running projects
+ * Consistent Hashing Alogorith to cache it up or bundling
+ * Zero Configuration
+ * 
+ * Transitive Dependencies
+ * 
+ * ?.Anything that would be auto generated put inside the gitignore file (Generate on the Server)
+ * ?.How will I make my project older browser compatible (using browserlist package) - COde compatible
  *
  *
  */
