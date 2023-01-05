@@ -1,0 +1,4 @@
+// Configuration file for babel
+{
+  "plugins": [["transform-remove-console", { "exclude": ["error", "warn"] }]]
+}
