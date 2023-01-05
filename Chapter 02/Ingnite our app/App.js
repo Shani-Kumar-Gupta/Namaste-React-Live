@@ -20,6 +20,7 @@
  * Manages PORT numbers for multiple running projects
  * Consistent Hashing Alogorith to cache it up or bundling
  * Zero Configuration
+ * COnsole log removal: for that required configuration (babel-plugin-transform-remove-console package)
  * 
  * Transitive Dependencies
  * 
