@@ -29,6 +29,8 @@ const heading1 = (
   </h1>
 );
 
+const Title = () => <h1>Title Component</h1>;
+
 /**
  * React Component: There are two types of React components -
  *  Functional Component - NEW
@@ -39,11 +41,19 @@ const heading1 = (
 FUnctional Component: Functional Component is a JavaScript function that returns JSX Expression or Composition of React Element.
 Rules-
 1. Component Name starts with a Capital letter
+.// JSX Sanitize our code from the malisious attack
+
+Component Composition: Want to use component inside another component
 */
 
 const HeaderComponent = () => {
   return (
     <div className="container">
+      {heading}
+      {/* Render as a tag */}
+      <Title />
+      {/* Render as a function */}
+      {Title()}
       <h1>Functional Header Component 🚀</h1>
     </div>
   );
