@@ -22,13 +22,14 @@ Advantages of JSX:
   Developer friendly
   Clean and less code
 */
+// JSX Expression
 const heading1 = (
   <h1 id="hello" key={1}>
     Namaste Devs
   </h1>
 );
 
-const div = React.createElement('div', {}, [heading, heading1]);
+const div = React.createElement('div', {}, [heading, heading1]); // React Element (div)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
