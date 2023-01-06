@@ -29,6 +29,40 @@ const heading1 = (
   </h1>
 );
 
+/**
+ * React Component: There are two types of React components -
+ *  Functional Component - NEW
+ *  Class Based Component - OLD
+ */
+
+/*
+FUnctional Component: Functional Component is a JavaScript function that returns JSX Expression or Composition of React Element.
+Rules-
+1. Component Name starts with a Capital letter
+*/
+
+const HeaderComponent = () => {
+  return (
+    <div className="container">
+      <h1>Functional Header Component 🚀</h1>
+    </div>
+  );
+};
+
+const HeaderComponent1 = () => (
+  <div className="container">
+    <h1>Functional Header Component 🚀</h1>
+  </div>
+);
+
+const HeaderComponent2 = function () {
+  return (
+    <div className="container">
+      <h1>Functional Header Component 🚀</h1>
+    </div>
+  );
+};
+
 const div = React.createElement('div', {}, [heading, heading1]); // React Element (div)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
