@@ -67,4 +67,8 @@ const div = React.createElement('div', {}, [heading, heading1]); // React Elemen
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
+// Render React Element
 root.render(heading1);
+
+// Render functional Component
+root.render(<HeaderComponent/>);
