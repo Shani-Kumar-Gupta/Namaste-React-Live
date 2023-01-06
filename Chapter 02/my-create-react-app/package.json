@@ -1,0 +1,17 @@
+{
+  "name": "my-create-react-app",
+  "version": "1.0.0",
+  "description": "My own version of create-react-app",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "create-react-app",
+    "bundlers",
+    "webpack",
+    "babel"
+  ],
+  "author": "Shani Kumar Gupta",
+  "license": "ISC"
+}
