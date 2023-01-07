@@ -1,11 +1,45 @@
 1. What is JSX?
-Answer:
+Answer: JSX is a HTML like syntax written using JavaScript. It's a fancy way of writting HTML inside JavaScript which is
+        developer friendly
 
 2. Superpower of JSX?
-Answer:
+Answer: Below are the superpowers of JSX-
+        1. We can use {} to write any JavaScript code inside JSX.
+        2. We can do the component composition using JSX. One component inside another component.
+        3. JSX Sanitize our code from the malisious attack
 
 3. Role of type attibute in script tag? What optons can I use there?
-Anster:
+Anster: The type attribute specifies the Internet media type (formerly known as MIME type) of the linked document. This 
+        attribute is only used if the href attribute is set. We can use below options-
+        1. module
+        2. importmap
+        3. text/javascript
 
 4. {TitleComponent} vs {<TitleComponent/>} vs {<TitleComponent></TitleComponent>} In JSX?
-Answer:  
+Answer:  In React, we can create and render element inside JSX in different ways using React Element (which is at the end it's
+         simple js variable) or using Functional and Class based component. The way you create element defines the different way
+         of rendering the element inside JSX. Below is the different ways of rendering the element-
+
+         1. React Element-
+         const TitleComponent = (
+          <h1>Title
+         );
+
+         const DivComponent = (
+          <div>
+            {TitleComponent}
+          </div>
+         );
+
+         2. Using Functional Component
+
+         const TitleComponent = () => (
+          <h1>Title
+         );
+
+         const DivComponent = () => (
+          <div>
+            {<TitleComponent />}
+            {<TitleComponent></TitleComponent>}
+          </div>
+         );
