@@ -69,6 +69,40 @@ const jsxHeader = (
   </div>
 );
 
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+
+// root.render(jsxHeader);
+
+// Question 3 :- Create a functional Component using JSX (h1,h2,h3,inside div with class title)?
+
+const Heading1 = () => {
+  return (
+    <h1 id="funcHead1" key="funckey1">Functional Comp. Heading 1</h1>
+  )
+}
+
+const Heading2 = () => {
+  return (
+    <h2 id="funcHead2" key="funckey2">Functional Comp. Heading 2</h2>
+  )
+}
+
+const Heading3 = () => {
+  return (
+    <h3 id="funcHead3" key="funckey3">Functional Comp. Heading 2</h3>
+  )
+}
+
+const Header = () => {
+  return (
+    <div className='title'>
+      <Heading1 />
+      <Heading2 />
+      <Heading3 />
+    </div>
+  )
+}
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-root.render(jsxHeader);
+root.render(<Header />);
