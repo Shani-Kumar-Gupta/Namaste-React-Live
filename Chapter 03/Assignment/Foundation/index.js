@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import Body from './components/Body';
 
 // Question 1 :- Create a Nested header Element using React.createElement (h1,h2,h3,inside div with class title)?
 const heading1 = React.createElement(
@@ -143,9 +144,12 @@ const UserIcon = () => (
 const HeaderComp = () => {
   return (
     <div className="container">
-      <LogoComponent />
-      <SearchComponent />
-      <UserIcon />
+      <div className="title">
+        <LogoComponent />
+        <SearchComponent />
+        <UserIcon />
+      </div>
+      <Body />
     </div>
   );
 };
