@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightgreen;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.logo {
+  width: 80px;
+  border-radius: 10px;
+}
+
+.searchBar {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.userIcon {
+  width: 50px;
+}

@@ -75,34 +75,81 @@ const jsxHeader = (
 
 // Question 3 :- Create a functional Component using JSX (h1,h2,h3,inside div with class title)?
 
+const TitleComponent = () => {
+  return <h1>Hello... Devs</h1>;
+};
+
 const Heading1 = () => {
   return (
-    <h1 id="funcHead1" key="funckey1">Functional Comp. Heading 1</h1>
-  )
-}
+    <h1 id="funcHead1" key="funckey1">
+      Functional Comp. Heading 1
+    </h1>
+  );
+};
 
 const Heading2 = () => {
   return (
-    <h2 id="funcHead2" key="funckey2">Functional Comp. Heading 2</h2>
-  )
-}
+    <h2 id="funcHead2" key="funckey2">
+      Functional Comp. Heading 2
+    </h2>
+  );
+};
 
 const Heading3 = () => {
   return (
-    <h3 id="funcHead3" key="funckey3">Functional Comp. Heading 2</h3>
-  )
-}
+    <h3 id="funcHead3" key="funckey3">
+      Functional Comp. Heading 2
+    </h3>
+  );
+};
 
 const Header = () => {
   return (
-    <div className='title'>
+    <div className="title">
+      {<TitleComponent />}
       <Heading1 />
       <Heading2 />
       <Heading3 />
     </div>
-  )
-}
+  );
+};
+
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+
+// root.render(<Header />);
+
+// Question 4: Create Header Component from Scratch using Functional Comp.
+
+const LogoComponent = () => (
+  <img
+    className="logo"
+    alt="logo"
+    src="https://static.vecteezy.com/system/resources/previews/011/883/295/original/modern-graphic-troly-colorful-logo-good-for-technology-logo-e-commerce-logo-online-shop-logo-company-logo-dummy-logo-bussiness-logo-free-vector.jpg"
+  />
+);
+
+const SearchComponent = () => (
+  <input className="searchBar" placeholder="Search Here....." type="search" />
+);
+
+const UserIcon = () => (
+  <img
+    className="userIcon"
+    alt="userIcon"
+    src="https://icons.veryicon.com/png/o/miscellaneous/two-color-icon-library/user-286.png"
+  />
+);
+
+const HeaderComp = () => {
+  return (
+    <div className="container">
+      <LogoComponent />
+      <SearchComponent />
+      <UserIcon />
+    </div>
+  );
+};
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-root.render(<Header />);
+root.render(<HeaderComp />);
