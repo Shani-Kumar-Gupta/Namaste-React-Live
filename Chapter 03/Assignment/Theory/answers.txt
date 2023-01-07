@@ -1,0 +1,11 @@
+1. What is JSX?
+Answer:
+
+2. Superpower of JSX?
+Answer:
+
+3. Role of type attibute in script tag? What optons can I use there?
+Anster:
+
+4. {TitleComponent} vs {<TitleComponent/>} vs {<TitleComponent></TitleComponent>} In JSX?
+Answer:  
