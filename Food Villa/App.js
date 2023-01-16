@@ -7,11 +7,27 @@ const Title = () => (
   </h1>
 );
 
+const HeaderComponent = () => {
+  return (
+    <div className="header__container">
+      <Title />
+      <div className="nav-items">
+        <ul>
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Contact Us</li>
+          <li>Cart</li>
+        </ul>
+      </div>
+    </div>
+  );
+};
+
 /* Step 1: Build your App Layout */
 const AppLayout = () => {
   return (
-    {
-      /*
+    <>
+      {/*
       Header
         - Logo
         - Nav Bar List Items (Right Side)
@@ -28,11 +44,12 @@ const AppLayout = () => {
         - Ref Links
         - Copyright
         - Address
-      */
-    }
-  )
-}
+      */}
+      <HeaderComponent />
+    </>
+  );
+};
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-root.render(<Title />);
+root.render(<AppLayout />);
