@@ -7,7 +7,14 @@
   <title>Practice 01</title>
 </head>
 <body>
+  <div class="header">
+    HEADER
+  </div>
   <div id="root"></div>
+  <div id="container"></div>
+  <div class="footer">
+    FOOTER
+  </div>
   <!-- <script>
     const head = document.createElement("h1");
     head.innerHTML = `<b><em>Started with React</em></b>`;
@@ -27,5 +34,20 @@
   </script> -->
   <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
   <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script>
+    const heading = React.createElement("h1", {}, "Hello React!");
+    console.log(heading);
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+    // Passing React Elemet into the render
+    root.render(heading);
+
+    const head = document.createElement("h1");
+    head.innerHTML = `<b><em>Started with React</em></b>`;
+
+    // const container = ReactDOM.createRoot(document.getElementById("container"));
+    // container.render(container);
+    const container = document.getElementById("container");
+    container.appendChild(head);
+  </script>
 </body>
 </html>
