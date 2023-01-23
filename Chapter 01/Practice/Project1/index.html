@@ -35,8 +35,14 @@
   <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
   <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
   <script>
-    const heading = React.createElement("h1", {}, "Hello React!");
+    const heading = React.createElement("h1", {
+      title: "heading1",
+      className: "heading1"
+    }, "Hello React!");
     console.log(heading);
+    console.log(heading.props.title);
+    console.log(heading.props.className);
+    console.log({...heading.props});
     const root = ReactDOM.createRoot(document.getElementById("root"));
     // Passing React Elemet into the render
     root.render(heading);
