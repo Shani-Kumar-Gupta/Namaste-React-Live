@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice 01</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script>
+    const head = document.createElement("h1");
+    head.innerHTML = `<b><em>Started with React</em></b>`;
+
+    const para = document.createElement("p");
+    para.innerText = '<b>Hey React! I am here to explore you :)</b>';
+    para.textContent = '<b>Hey!!!</b>';
+
+    const container = document.createElement("div");
+    container.className = "container";
+
+    container.appendChild(para);
+    document.body.appendChild(container);
+
+    const root = document.getElementById("root");
+    root.appendChild(head);
+  </script>
+</body>
+</html>
