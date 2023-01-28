@@ -15,7 +15,7 @@
  * JS optimization
  * Caching while development
  * Compression
- * Compatible with older versions of browsers (using browserslist and babel packages)
+ * Compatible with older versions of browsers (using browserslist and babel packages) - polyfills
  * enable HTTPS on dev - (npx parcel entrypoint --https)
  * Manages PORT numbers for multiple running projects
  * Consistent Hashing Alogorith to cache it up or bundling
