@@ -2,9 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 const Title = () => (
-  <h1 className="title" id="title" key="title">
-    Food Villa
-  </h1>
+  <div className="title__container">
+    <a href="/">
+      <img
+        className="logo"
+        alt="logo"
+        src="https://cdn.dribbble.com/users/3005141/screenshots/5786598/befoodie.jpg"
+      />
+    </a>
+    <h1 className="title" id="title">
+      Food Villa
+    </h1>
+  </div>
 );
 
 const HeaderComponent = () => {
@@ -23,10 +32,51 @@ const HeaderComponent = () => {
   );
 };
 
+const burgerKing = {
+  name: "Burger King",
+  image: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/cchf34lzjd5unhgbgedu",
+  cusines: ["Burgers", "American"],
+  rating: "4.2"
+}
+
+const RestrauntCard = () => {
+  return (
+    <div className="restraunt__card">
+      <img alt="burger king" src={burgerKing.image} />
+      <h2>{burgerKing.name}</h2>
+      <h3>{burgerKing.cusines.join(", ")}</h3>
+      <h4>{burgerKing.rating} Stars</h4>
+    </div>
+  )
+}
+
+const BodyComponent = () => {
+  return (
+    <div className="body__container">
+      <RestrauntCard />
+      <RestrauntCard />
+      <RestrauntCard />
+      <RestrauntCard />
+      <RestrauntCard />
+      <RestrauntCard />
+      <RestrauntCard />
+      <RestrauntCard />
+    </div>
+  )
+}
+
+const FooterComponent = () => {
+  return (
+    <div className="footer__container">
+      <h1>Footer Component</h1>
+    </div>
+  )
+}
+
 /* Step 1: Build your App Layout */
 const AppLayout = () => {
   return (
-    <>
+    <React.Fragment>
       {/*
       Header
         - Logo
@@ -46,7 +96,21 @@ const AppLayout = () => {
         - Address
       */}
       <HeaderComponent />
-    </>
+      <BodyComponent />
+      <FooterComponent />
+    </React.Fragment>
+  );
+};
+
+// React.Fragment - Component - It is like a empty tag <> </> - Empty tag - behind the screen React Fragment - Shorthand
+// JSX can have only one parent element
+const JSX = () => {
+  return (
+    // <React.Fragment></React.Fragment>
+    <div style={{backgroundColor: "red"}}>
+      <h1>JSX</h1>
+      <h2>Second JSX</h2>
+    </div>
   );
 };
 
