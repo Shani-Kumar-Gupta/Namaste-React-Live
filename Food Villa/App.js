@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import RestrauntList from './data';
 
 const Title = () => (
   <div className="title__container">
@@ -32,6 +33,8 @@ const HeaderComponent = () => {
   );
 };
 
+
+// Config Driven UI: Configuration
 const burgerKing = {
   name: "Burger King",
   image: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/cchf34lzjd5unhgbgedu",
@@ -39,21 +42,24 @@ const burgerKing = {
   rating: "4.2"
 }
 
+
+/* Method 1: data mapping*/
 const RestrauntCard = () => {
+  let imgURL = `https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/`;
   return (
     <div className="restraunt__card">
-      <img alt="burger king" src={burgerKing.image} />
-      <h2>{burgerKing.name}</h2>
-      <h3>{burgerKing.cusines.join(", ")}</h3>
-      <h4>{burgerKing.rating} Stars</h4>
+      <img alt="burger king" src={`${imgURL}${RestrauntList[3].data.cloudinaryImageId}`} />
+      <h2>{RestrauntList[1]?.data?.name}</h2>
+      <h3>{RestrauntList[8]?.data?.cuisines}</h3> {/* Always do optional channing: Industry good practice */}
+      <h4>{RestrauntList[1]?.data?.lastMileTravelString}</h4>
     </div>
-  )
-}
+  );
+};
 
 const BodyComponent = () => {
   return (
     <div className="body__container">
-      <RestrauntCard />
+      <RestrauntCard restra/>
       <RestrauntCard />
       <RestrauntCard />
       <RestrauntCard />
@@ -62,16 +68,16 @@ const BodyComponent = () => {
       <RestrauntCard />
       <RestrauntCard />
     </div>
-  )
-}
+  );
+};
 
 const FooterComponent = () => {
   return (
     <div className="footer__container">
       <h1>Footer Component</h1>
     </div>
-  )
-}
+  );
+};
 
 /* Step 1: Build your App Layout */
 const AppLayout = () => {
@@ -107,7 +113,7 @@ const AppLayout = () => {
 const JSX = () => {
   return (
     // <React.Fragment></React.Fragment>
-    <div style={{backgroundColor: "red"}}>
+    <div style={{ backgroundColor: 'red' }}>
       <h1>JSX</h1>
       <h2>Second JSX</h2>
     </div>

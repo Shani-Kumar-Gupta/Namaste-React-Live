@@ -1,0 +1,54 @@
+1) Is JSX mandatory for React?
+Answer: No, JSX is not mandatory for React. Each JSX element is just a syntactic sugar for calling React.createElement(component, ...props, ...children).
+        So anything you can do with jsx can also be done using plain JavaScript. It's just syntactic sugar for developer to write clean code and easy to 
+        understand. Example for JSX-
+
+        const myJSX = <h1>Hello, JSX!</h1>;
+
+2) Is ES6 mandatory for React?
+Answer: No, ES6 is not mandatory for React. But React uses ES6 features and latest projects rely on lots of ES6 syntax and features which includes-
+        Classes, Arrow functions, Variable let and const, higher order functions (Array.map) amd many more.
+
+3) {TitleComponent} vs {<TitleComponent />} vs {<TitleComponent></TitleComponent>} in JSX?
+Answer: Below are the differences between them-
+        i) {TitleComponent} - This value describe as a JavaScript expression or variable or React element. 
+        ii) {<TitleComponent />} - This value describe as a component which will return some JSX out of it. In simple terms TitleComponent,
+         a function that is returning a JSX value. If component is written inside the {<  />} expression.
+        iii) {<TitleComponent></TitleComponent>} - <TitleComponent /> and <TitleComponent></TitleComponent> are equivalent only when < TitleComponent /> has no child components. 
+             The opening and closing tags are created to include the child components.
+
+4) How can I write comments in JSX?
+Answer: JSX comments are written as follows-
+        {/* */} - Single or Multi line comments
+        Examples - 
+        {/* Single Line Comment */}
+        {/* Multi 
+            Line
+            Comment
+        */}
+
+5) What is <React.Fragment></React.Fragment> and <></>?
+
+6) What is Virtual DOM?
+7) What is Reconciliation in React?
+8) What is React Fiber?
+9) Whhy we need keys in React? When do we need keys in React?
+10) Can we use index as keys in React?
+11) What is props in React?
+Answer: props stands for properties (It looks like a HTML attibutes). Props are arguments passed into React components. 
+        props are used in React to pass data from one component to another (from a parent component to a child component(s)). 
+        They are useful when you want the flow of data in your app to be dynamic. Example-
+
+        const MyApp = () => {
+           return (
+                <div className="container">
+                   <PrintData myName="Shani Kumar Gupta" myAge="24" /> // Here myName and myAge are props
+                </div>
+           );
+        };
+
+12) What is a config driven UI?
+Answer: When you build a real world application, you have to show dynamic data and UI in frontend. So we control our frontend using a configuration,
+        which is known as Config Driven UI which we are getting from the backend APIs. Using this we make our UI dynamic.
+
+13) Can we use index as keys in React (valid key)? (Never use index as keys why)
