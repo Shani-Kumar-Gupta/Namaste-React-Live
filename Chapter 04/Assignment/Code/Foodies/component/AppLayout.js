@@ -1,4 +1,5 @@
 import React from 'react';
+import {images} from '../constants';
 
 /***** Project Planning *******/
 /*
@@ -26,9 +27,21 @@ import React from 'react';
     Address
 */
 
+const Title = () => {
+  return (
+    <div className="title__container">
+      <a href="/">
+        <img alt="foodies logo" src={images.logo} />
+      </a>
+    </div>
+  )
+}
+
 const HeaderComponent = () => {
   return (
-    <div>Header Component</div>
+    <div className="header__container">
+      <Title />
+    </div>
   )
 }
 
