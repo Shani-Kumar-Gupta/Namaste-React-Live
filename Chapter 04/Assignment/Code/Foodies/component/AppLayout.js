@@ -31,7 +31,7 @@ const Title = () => {
   return (
     <div className="title__container">
       <a href="/">
-        <img alt="foodies logo" src={images.logo} />
+        <img alt="foodies logo" src={images.logo} className="logo" />
       </a>
     </div>
   )
@@ -41,6 +41,14 @@ const HeaderComponent = () => {
   return (
     <div className="header__container">
       <Title />
+      <div className="nav__items">
+        <ul>
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Contact Us</li>
+          <li>Cart</li>
+        </ul>
+      </div>
     </div>
   )
 }
@@ -94,7 +102,6 @@ const config = [
 const AppLayout = () => {
   return (
     <React.Fragment>
-      <div>Hii AppLayout</div>
       <HeaderComponent />
       <BodyComponent />
       <FooterComponent />

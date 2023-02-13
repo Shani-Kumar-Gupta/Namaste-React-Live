@@ -9,3 +9,25 @@
 body {
   font-family: 'Lato', sans-serif;
 }
+
+.logo {
+  width: 110px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: antiquewhite;
+}
+
+.nav__items ul {
+  display: flex;
+  list-style-type: none;
+  gap: 30px;
+}
+
+.nav__items ul li {
+  padding: 20px;
+  cursor: pointer;
+}
