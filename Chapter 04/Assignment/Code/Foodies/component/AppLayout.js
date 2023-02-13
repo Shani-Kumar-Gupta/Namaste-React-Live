@@ -1,5 +1,5 @@
 import React from 'react';
-import {images} from '../constants';
+import { images, RestaurantData } from '../constants';
 
 /***** Project Planning *******/
 /*
@@ -53,9 +53,29 @@ const HeaderComponent = () => {
   )
 }
 
+const RestaurantCard = () => {
+  let imgURL = "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" + RestaurantData?.[0]?.data?.cloudinaryImageId;
+  return (
+    <div className="restaurant__card">
+      <img alt={RestaurantData?.[0]?.data?.name} src={imgURL} className="cardImg" />
+      <h2>{RestaurantData?.[0]?.data?.name}</h2>
+      <h3>{RestaurantData?.[0]?.data?.cuisines?.join(", ") }</h3>
+      <h4>{RestaurantData?.[0]?.data?.lastMileTravelString }</h4>
+    </div>
+  )
+}
+
 const BodyComponent = () => {
   return (
-    <div>Body Component</div>
+    <div className="body__container">
+      <RestaurantCard />
+      <RestaurantCard />
+      <RestaurantCard />
+      <RestaurantCard />
+      <RestaurantCard />
+      <RestaurantCard />
+      <RestaurantCard />
+    </div>
   )
 }
 
