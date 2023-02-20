@@ -238,3 +238,15 @@ const AppLayout = () => {
 };
 
 export default AppLayout;
+
+
+/* What is VIRTUAL DOM:
+  We keep a representation of our DOM tree in a virtual DOM tree with us.
+
+  Why do we need Virtual DOM in React? and Why React is fast?
+  - Reconsiliation in React - It's an algorithm that's React uses to diff one tree from another and ditermine what's needs to changes in  UI.
+  - And just update or rerender just the portions of it not whole application.
+
+  Note: If you have a multiple children with the same element then always use key attribute else it will re-render the whole tree if any updation or deletion happens.
+
+*/
