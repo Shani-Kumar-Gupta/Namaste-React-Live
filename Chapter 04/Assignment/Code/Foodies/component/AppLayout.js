@@ -250,4 +250,6 @@ export default AppLayout;
   Why do we use keys?
   Note: If you have a multiple children with the same element then always use key attribute else it will re-render the whole tree if any updation or deletion happens.
 
+  What is React Fiber?
+  - React 16, It's a Reconsiliation Engine which is used to diff the DOM tree.
 */
