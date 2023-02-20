@@ -53,6 +53,9 @@ const HeaderComponent = () => {
   )
 }
 
+/*
+1. Currently my all restaurants cards having same data and some how we have to pass some dynamic data to each card -> props as an attibute
+*/
 const RestaurantCard = () => {
   let imgURL = "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" + RestaurantData?.[0]?.data?.cloudinaryImageId;
   return (
@@ -68,13 +71,10 @@ const RestaurantCard = () => {
 const BodyComponent = () => {
   return (
     <div className="body__container">
-      <RestaurantCard />
-      <RestaurantCard />
-      <RestaurantCard />
-      <RestaurantCard />
-      <RestaurantCard />
-      <RestaurantCard />
-      <RestaurantCard />
+      <RestaurantCard restaurantDetails={RestaurantData[0]} /> {/* Passing restaurantDetails as props - look like an html attribute */}
+      <RestaurantCard restaurantDetails={RestaurantData[1]} />
+      <RestaurantCard restaurantDetails={RestaurantData[2]} />
+      <RestaurantCard restaurantDetails={RestaurantData[3]} />
     </div>
   )
 }
