@@ -247,6 +247,7 @@ export default AppLayout;
   - Reconsiliation in React - It's an algorithm that's React uses to diff one tree from another and ditermine what's needs to changes in  UI.
   - And just update or rerender just the portions of it not whole application.
 
+  Why do we use keys?
   Note: If you have a multiple children with the same element then always use key attribute else it will re-render the whole tree if any updation or deletion happens.
 
 */
