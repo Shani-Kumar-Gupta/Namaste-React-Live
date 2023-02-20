@@ -252,4 +252,6 @@ export default AppLayout;
 
   What is React Fiber?
   - React 16, It's a Reconsiliation Engine which is used to diff the DOM tree.
+
+  Why don't we use index as a key?
 */
