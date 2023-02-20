@@ -68,6 +68,10 @@ const RestaurantCard = () => {
   )
 }
 
+/*
+props - properties (This is way of passing data to the component using props)
+*/
+
 const BodyComponent = () => {
   return (
     <div className="body__container">
