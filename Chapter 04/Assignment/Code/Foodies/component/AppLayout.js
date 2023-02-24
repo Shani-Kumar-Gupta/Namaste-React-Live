@@ -190,7 +190,12 @@ const BodyComponent = () => {
 };
 
 const FooterComponent = () => {
-  return <div>Footer Component</div>;
+  return (
+    <div className="footer__container">
+      <h2>Foodies</h2>
+      <h3>Created By 😃 <b>Shani Kumar Gupta</b> &#169;2023</h3>
+    </div>
+  )
 };
 
 /*

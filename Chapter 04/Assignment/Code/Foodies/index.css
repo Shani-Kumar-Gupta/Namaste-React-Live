@@ -60,3 +60,13 @@ body {
 .restaurant__card:hover {
   box-shadow: 20px 20px 20px lightgray;
 }
+
+.footer__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  background-color: antiquewhite;
+  padding: 20px;
+}
