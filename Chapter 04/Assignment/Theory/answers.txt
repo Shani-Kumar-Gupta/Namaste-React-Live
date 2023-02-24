@@ -28,6 +28,17 @@ Answer: JSX comments are written as follows-
         */}
 
 5) What is <React.Fragment></React.Fragment> and <></>?
+Answer: <React.Fragment></React.Fragment> or <></> is a special type of react component which helps you to group a list of children elements without having parent element or extra nodes to the DOM.
+        Example:
+
+        const App = () => {
+           return (
+                <React.Fragment>
+                  <div>Hello React</div>
+                  <h1>Shani Kumar Gupta</h1>
+                </React.Fragment>
+           )
+        }
 
 6) What is Virtual DOM?
 7) What is Reconciliation in React?
