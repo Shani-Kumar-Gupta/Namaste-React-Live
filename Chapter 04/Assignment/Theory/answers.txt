@@ -41,10 +41,20 @@ Answer: <React.Fragment></React.Fragment> or <></> is a special type of react co
         }
 
 6) What is Virtual DOM?
+Answer: Virtual DOM is a representation of the actual DOM which help to identify the changes and render only those changes in a DOM.
+        Which make React faster.
+
 7) What is Reconciliation in React?
+Answer: Reconciliation in React is a diffing algorithm helps to diff one tree from another and determine what's need to changes in the UI or
+        just render the part of a DOM which got updated or chnaged.
+
 8) What is React Fiber?
+Answer: React Fiber is a Reconciliation engine used to identify the difference between the Actual and Virtual DOM faster and only render those changes in UI.
+
 9) Whhy we need keys in React? When do we need keys in React?
+Answer: 
 10) Can we use index as keys in React?
+
 11) What is props in React?
 Answer: props stands for properties (It looks like a HTML attibutes). Props are arguments passed into React components. 
         props are used in React to pass data from one component to another (from a parent component to a child component(s)). 
