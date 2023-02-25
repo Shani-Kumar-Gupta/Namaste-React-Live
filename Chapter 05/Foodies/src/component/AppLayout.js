@@ -1,6 +1,6 @@
 import React from 'react';
-import { images, RestaurantData } from '../constants'; // Named Export
-import HeaderComponent from './Header'; // Default Export
+import { images, RestaurantData } from '../constants'; // Named Import
+import HeaderComponent from './Header'; // Default Import
 
 /***** Project Planning *******/
 /*

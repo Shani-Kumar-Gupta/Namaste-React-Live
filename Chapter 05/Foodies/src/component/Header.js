@@ -1,7 +1,7 @@
 import React from 'react';
-import {images} from '../constants'; // Named Export
+import {images} from '../constants'; // Named Import
 
-const Title = () => {
+export const Title = () => { // Named Export
   return (
     <div className="title__container">
       <a href="/">
@@ -27,10 +27,10 @@ const HeaderComponent = () => {
   );
 };
 
-export default HeaderComponent;
+export default HeaderComponent; // Default Export
 
 /*
 Two ways of exporting files-
   1. Default Export - If our file having multiple function by default we can only export one file as default. We can import using any name for the function if it's default exported.
-  2. Named Export - 
+  2. Named Export - We have to curly paranthesis to import the file as a named export.
 */
