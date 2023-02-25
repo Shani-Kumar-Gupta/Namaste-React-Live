@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Lato:wght@300;400;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.logo {
+  width: 110px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: antiquewhite;
+}
+
+.nav__items ul {
+  display: flex;
+  list-style-type: none;
+  gap: 30px;
+}
+
+.nav__items ul li {
+  padding: 20px;
+  cursor: pointer;
+}
+
+.body__container {
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-items: center;
+  align-content: center;
+  margin: 30px auto;
+  width: 80%;
+}
+
+.restaurant__card {
+  /* border: 1px solid lightgrey; */
+  border-radius: 8px;
+  box-shadow: 10px 10px 20px lightgray;
+  width: 200px;
+  padding: 10px;
+}
+
+.cardImg {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 10px 10px 20px lightgray;
+}
+
+.restaurant__card:hover {
+  box-shadow: 20px 20px 20px lightgray;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  background-color: antiquewhite;
+  padding: 20px;
+}
