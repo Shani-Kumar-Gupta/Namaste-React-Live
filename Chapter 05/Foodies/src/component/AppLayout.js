@@ -2,6 +2,9 @@ import React from 'react';
 import { images, RestaurantData } from '../constants'; // Named Import
 import HeaderComponent from './Header'; // Default Import
 
+// import * as constData from '../constants';
+// console.log(constData.images);
+
 /***** Project Planning *******/
 /*
   Header Component
